@@ -15,23 +15,34 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city..." required />
-          <input type="submit" value="search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>Thursday 21:30</div>
-        <h1>Gaborone</h1>
-        <p>
-          moderate rain
-          <br />
-          Humidity:<strong>87%</strong> Wind:<strong>7.2km/h</strong>
-        </p>
-        <div>
-          <span>🌦️</span>
-          <span>24</span>
-          <span>℃</span>
+        <div class="weather-app-data">
+          <div>
+            <div>Thursday 21:30</div>
+
+            <h1 class="weather-app-city">Gaborone</h1>
+
+            <p class="weather-app-details">
+              Moderate rain,
+              <br />
+              Humidity:<strong>87%</strong>, Wind:<strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌦️</div>
+            <div class="weather-app-temperature-value">24</div>
+            <div class="weather-app-unit">℃</div>
+          </div>
         </div>
       </main>
       <footer>
