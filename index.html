@@ -33,13 +33,13 @@
             <div id="time">Thursday 21:30</div>
 
             <h1 class="weather-app-city" id="city">Gaborone</h1>
-
-            <div class="description" id="description">
-              <em></em>
-            </div>
             <div class="weather-app-details">
-              <div>Humidity: <strong id="humidity"></strong></div>
-              <div>Wind: <strong id="wind-speed"> </strong></div>
+              <div id="description">
+                <em></em>
+              </div>
+
+              <span>Humidity: <strong id="humidity"></strong>,</span>
+              <span>Wind: <strong id="wind-speed"> </strong></span>
             </div>
           </div>
           <div class="weather-app-temperature-container">
@@ -49,17 +49,7 @@
             <div class="weather-app-unit">℃</div>
           </div>
         </div>
-        <div class="weather-forecast">
-          <div class="weathet-forecast-day">
-            <div class="weather-forecast-date">Thu</div>
-            <div class="weather-forecast-icon">🌧️</div>
-            <div class="weather-forecast-temperatures">
-              <strong>15°</strong>
-
-              <div class="weather-forecast-temperature">9°</div>
-            </div>
-          </div>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
       <footer>
         This project was coded by
