@@ -62,7 +62,8 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement = addEventListener("submit", handleSearchSubmit);
 
 function displayForecast() {
-  let days = ["thur", "Fri", "Sat", "Sun", "Mon", "Tue", "Wed"];
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
   let forecastHtml = "";
 
   days.forEach(function (day) {
@@ -78,11 +79,13 @@ function displayForecast() {
                <div class="weather-forecast-temperature">9°</div>
               </div>
               </div>
-            </div>
-            `;
+              <div>
+             `;
   });
 
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
+
 displayForecast();
+searchCity("Gaborone");
